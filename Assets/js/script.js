@@ -14,14 +14,14 @@ function enterpassword() {
   passwordText.value = password;
 }
 
-//write password function 
+
 function writePassword(){
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
 
-// Add event listener to generate button
+
 generateBtn.addEventListener("click", writePassword)
 
 
@@ -38,7 +38,7 @@ function generatePassword(){
     alert("Please choose numbers between 8 - 128!");
     return generatePassword()
   }
-  //ask the user if they want to include upper, lower, num, special?
+  
   var hasUpper = confirm("Include upper case letters?");
   var hasLower = confirm("Include lower case letters?");
   var hasNumbers = confirm("Include numbers?");
